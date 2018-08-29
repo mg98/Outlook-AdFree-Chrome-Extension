@@ -1,0 +1,13 @@
+{ 
+  "manifest_version": 2,
+  "name": "Outlook AdFree",
+  "version": "1.0",
+  "description": "Removes ads in outlook",
+  "permissions": ["tabs", "*://*.outlook.live.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.outlook.live.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
